@@ -1,8 +1,4 @@
-# Title
-
-Abstract:xxx
-
-## Papar Information
+## About
 
 - Title: `PiSync`
 - Authors: `Sarthak-Khare`
