@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "4dc093b3-820f-4e83-b878-cd66ee83d746",
+		"name": "PiSync",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16621625"
+	},
+	"item": [
+		{
+			"name": "sync-event",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "1289",
+							"type": "text"
+						},
+						{
+							"key": "timestamp",
+							"value": "13/06/25",
+							"type": "text"
+						},
+						{
+							"key": "total_files_synced",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "total_errors",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "internet_speed",
+							"value": "4.5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/sync-event",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"sync-event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllSyncHistory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/devices/repeated-failures",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"devices",
+						"repeated-failures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/device/3232/sync-history",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"device",
+						"3232",
+						"sync-history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
