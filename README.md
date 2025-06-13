@@ -15,12 +15,9 @@ available.`
 - moment
 - multer
 
-## Use
+## For Run
 
 ```
-- for run
-```
-
 nodemon server.js
-
 ```
+
